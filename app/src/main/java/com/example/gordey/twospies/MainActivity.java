@@ -1,5 +1,6 @@
 package com.example.gordey.twospies;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,8 +14,6 @@ import android.widget.Toast;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -42,10 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         levelDifficulty.setAdapter(adapter);
 
         // AdMob
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
+        MobileAds.initialize(this, initializationStatus -> {
         });
 
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -54,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         menu_banner.loadAd(adRequest);
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

@@ -9,11 +9,9 @@ import android.widget.Button;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 
-public class RulesActivity extends AppCompatActivity implements View.OnClickListener {
+public class RulesActivity extends AppCompatActivity implements View.OnClickListener{
 
     Button back;
 
@@ -26,10 +24,7 @@ public class RulesActivity extends AppCompatActivity implements View.OnClickList
         back.setOnClickListener(this);
 
         // AdMob
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
+        MobileAds.initialize(this, initializationStatus -> {
         });
 
         AdRequest adRequest = new AdRequest.Builder().build();

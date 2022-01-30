@@ -24,8 +24,6 @@
                 android:id="@+id/banner_rules_0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 ads:adSize="BANNER"
                 ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
@@ -49,7 +47,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <TextView
                 android:id="@+id/textView1"
@@ -65,7 +64,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -80,7 +80,8 @@
                 android:textSize="4mm"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <TextView
                 android:id="@+id/textView1.2"
@@ -96,14 +97,13 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <com.google.android.gms.ads.AdView
                 android:id="@+id/banner_rules_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 ads:adSize="BANNER"
                 ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
@@ -127,7 +127,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -143,7 +144,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -158,7 +160,8 @@
                 android:textSize="4mm"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <TextView
                 android:id="@+id/textView1.4"
@@ -174,14 +177,13 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <com.google.android.gms.ads.AdView
                 android:id="@+id/banner_rules_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 ads:adSize="BANNER"
                 ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
@@ -205,7 +207,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -221,7 +224,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -237,7 +241,8 @@
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+                app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                tools:ignore="InOrMmUsage" />
 
             <TextView
                 android:id="@+id/textView1.6"
@@ -253,14 +258,13 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <com.google.android.gms.ads.AdView
                 android:id="@+id/banner_rules_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 ads:adSize="BANNER"
                 ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
@@ -284,7 +288,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -300,7 +305,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -316,7 +322,8 @@
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+                app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                tools:ignore="InOrMmUsage" />
 
             <TextView
                 android:id="@+id/textView1.8"
@@ -332,14 +339,13 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <com.google.android.gms.ads.AdView
                 android:id="@+id/banner_rules_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 ads:adSize="BANNER"
                 ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
@@ -363,7 +369,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="InOrMmUsage" />
 
             <Button
                 android:id="@+id/back"

@@ -1,11 +1,10 @@
 package com.example.gordey.twospies;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
-//import android.util.Log;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -14,14 +13,10 @@ import android.widget.TextView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
-import java.util.Date;
 import java.util.Random;
 
 public class AcquaintanceActivity extends AppCompatActivity implements View.OnClickListener{
-    private static final String MyTag = "MyTag";
 
     Button hideBtn, nextBtn, menu;
     TextView location, txtTutorial;
@@ -30,14 +25,12 @@ public class AcquaintanceActivity extends AppCompatActivity implements View.OnCl
     int sum, sum1, playersInt, start = 0;
 
     String locationStr, complexity;
+    int randSpy, randLocation;
 
     int[] players;
-
     String[] locationArr;
 
     Random rand = new Random();
-
-    int randSpy, randLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,10 +38,7 @@ public class AcquaintanceActivity extends AppCompatActivity implements View.OnCl
         setContentView(R.layout.acquaintance);
 
         // AdMob
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
+        MobileAds.initialize(this, initializationStatus -> {
         });
 
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -100,10 +90,8 @@ public class AcquaintanceActivity extends AppCompatActivity implements View.OnCl
         int min = rand.nextInt(locationArr.length) + 1;
         int max = rand.nextInt(locationArr.length);
 
-        if(min == max && min != 0)
+        if(min == max)
             min--;
-        if(min == 0 && max == 0)
-            max++;
         if (min > max){
             int min2 = max;
             max = min;
@@ -146,7 +134,6 @@ public class AcquaintanceActivity extends AppCompatActivity implements View.OnCl
                 while (randSpy > contPlayersInt) {
                     for(int i_randSpy = 0; i_randSpy <= rnd_for; i_randSpy++) {
                         randSpy_minus = rand.nextInt(5);
-                        Log.d(MyTag, "1 randSpy_minus - " + randSpy_minus);
                     }
                     randSpy = randSpy - randSpy_minus;
                 }
@@ -188,6 +175,7 @@ public class AcquaintanceActivity extends AppCompatActivity implements View.OnCl
         }
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

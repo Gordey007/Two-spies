@@ -17,9 +17,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-
 import com.google.android.gms.ads.reward.RewardItem;
 import com.google.android.gms.ads.reward.RewardedVideoAd;
 import com.google.android.gms.ads.reward.RewardedVideoAdListener;
@@ -53,10 +50,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         loadRewardedVideoAd();
 
         // AdMob banner
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
+        MobileAds.initialize(this, initializationStatus -> {
         });
 
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -83,7 +77,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
         timeGame.setText(Integer.toString(time[0]));
 
-        new CountDownTimer(time[0] * 60000, 1000) {
+        new CountDownTimer(time[0] * 60000L, 1000) {
             @SuppressLint({"SetTextI18n", "SimpleDateFormat"})
             @Override
             public void onTick(long l) {
