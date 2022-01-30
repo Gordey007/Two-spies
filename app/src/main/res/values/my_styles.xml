@@ -1,0 +1,10 @@
+<resources>
+    <style name="Button" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/button</item>
+        <item name= "android:textColor">#000</item>
+        <item name= "android:textSize">20sp</item>
+        <item name= "android:padding">10dp</item>
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+</resources>
+
